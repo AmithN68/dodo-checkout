@@ -1,0 +1,279 @@
+.store {
+  min-height: 100vh;
+  padding: 32px 24px 64px;
+  box-sizing: border-box;
+}
+
+.store-header {
+  max-width: 1040px;
+  margin: 0 auto 36px;
+}
+
+.store-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.store-brand-mark {
+  color: #7a5cff;
+}
+
+.store-tagline {
+  margin: 6px 0 0;
+  color: #666666;
+  font-size: 14px;
+}
+
+.store-main {
+  max-width: 1040px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.store-products {
+  display: grid;
+  gap: 20px;
+}
+
+.product-card {
+  display: flex;
+  gap: 18px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
+}
+
+.product-card-image {
+  width: 108px;
+  height: 108px;
+  flex: 0 0 auto;
+  border-radius: 12px;
+  object-fit: cover;
+  background: #f2f2f2;
+}
+
+.product-card-body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.product-card-body h2 {
+  margin: 0 0 4px;
+  font-size: 17px;
+}
+
+.product-card-body p {
+  margin: 0;
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product-card-footer {
+  margin-top: auto;
+  padding-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.product-card-price {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.buy-button {
+  min-height: 40px;
+  padding: 0 18px;
+  border: 0;
+  border-radius: 9px;
+  background: #111111;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, opacity 120ms ease;
+}
+
+.buy-button:hover:not(:disabled) {
+  background: #2a2a2a;
+}
+
+.buy-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.store-sidebar {
+  display: grid;
+  gap: 20px;
+  position: sticky;
+  top: 32px;
+}
+
+.panel {
+  padding: 18px 20px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 16px;
+}
+
+.panel h3 {
+  margin: 0 0 4px;
+  font-size: 15px;
+}
+
+.panel-hint {
+  margin: 0 0 14px;
+  color: #777777;
+  font-size: 12.5px;
+  line-height: 1.4;
+}
+
+.test-cards {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.test-cards li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 9px;
+  background: #f7f7f7;
+}
+
+.test-cards li > div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.test-cards code {
+  font-size: 13px;
+}
+
+.test-cards li span {
+  color: #777777;
+  font-size: 11.5px;
+}
+
+.test-cards button {
+  flex: 0 0 auto;
+  min-height: 30px;
+  padding: 0 10px;
+  border: 1px solid #d8d8d8;
+  border-radius: 7px;
+  background: #ffffff;
+  color: #333333;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.test-cards button:hover {
+  background: #f0f0f0;
+}
+
+.log-empty {
+  margin: 0;
+  padding: 14px 0 2px;
+  color: #999999;
+  font-size: 13px;
+  text-align: center;
+}
+
+.event-log {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.event-item {
+  padding: 10px 12px;
+  border-radius: 9px;
+  border-left: 3px solid #cccccc;
+  background: #f7f7f7;
+}
+
+.event-item--success {
+  border-left-color: #1a9d5c;
+  background: #f0faf5;
+}
+
+.event-item--error {
+  border-left-color: #d64545;
+  background: #fdf3f3;
+}
+
+.event-item--close {
+  border-left-color: #8c8c8c;
+  background: #f5f5f5;
+}
+
+.event-item-row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.event-item-title {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.event-item-time {
+  font-size: 11px;
+  color: #888888;
+}
+
+.event-item-detail {
+  display: block;
+  margin-top: 3px;
+  font-size: 12.5px;
+  color: #555555;
+  word-break: break-word;
+}
+
+@media (max-width: 760px) {
+  .store-main {
+    grid-template-columns: 1fr;
+  }
+
+  .store-sidebar {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    flex-direction: column;
+  }
+
+  .product-card-image {
+    width: 100%;
+    height: 140px;
+  }
+}
